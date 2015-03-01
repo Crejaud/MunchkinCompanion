@@ -1,0 +1,205 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:ads="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    style="@style/peach_background_style"
+    android:baselineAligned="false">
+
+    <LinearLayout style="@style/battle_screen_half_wrapper"
+        android:background="@drawable/peach_background"
+        android:layout_weight=".8">
+
+    <TextView
+        style="@style/non_button_text"
+        android:text="player name"
+        android:id="@+id/textPlayerName" />
+
+    <LinearLayout style="@style/up_down_horizontal_layout">
+
+        <LinearLayout style="@style/up_down_vertical_layout">
+
+            <TextView
+                style="@style/small_h2_text"
+                android:text="@string/level_string"
+                android:id="@+id/textLevel" />
+
+            <Button
+                style="@style/up_button"
+                android:id="@+id/imageBtnUpLevel"/>
+
+            <TextView
+                style="@style/number"
+                android:id="@+id/textBaseLvl"/>
+
+            <Button
+                style="@style/down_button"
+                android:id="@+id/imageBtnDownLevel" />
+
+
+
+        </LinearLayout>
+
+        <LinearLayout style="@style/up_down_vertical_layout">
+
+            <TextView
+                style="@style/small_h2_text"
+                android:text="@string/gear_string"
+                android:id="@+id/textGear" />
+
+            <Button
+                style="@style/up_button"
+                android:id="@+id/imageBtnUpGear"/>
+
+            <TextView
+                style="@style/number"
+                android:id="@+id/textBonusLvl"/>
+
+            <Button
+                style="@style/down_button"
+                android:id="@+id/imageBtnDownGear" />
+
+
+        </LinearLayout>
+
+        <LinearLayout style="@style/up_down_vertical_layout">
+
+            <TextView
+                style="@style/small_h2_text"
+                android:text="@string/modifier_string"
+                android:id="@+id/textModifier" />
+
+            <Button
+                style="@style/up_button"
+                android:id="@+id/imageBtnUpMod"/>
+
+            <TextView
+                style="@style/number"
+                android:id="@+id/textOneShotLvl"/>
+
+            <Button
+                style="@style/down_button"
+                android:id="@+id/imageBtnDownMod" />
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:background="@drawable/battle_middle_4"
+        android:layout_width="fill_parent"
+        android:layout_height="68dp"
+        android:orientation="horizontal">
+
+        <TextView
+            style="@style/non_button_text"
+            android:layout_width="match_parent"
+            android:layout_weight="1"
+            android:text="1"
+            android:id="@+id/textMonsterTotalLvl"
+            android:textSize="@dimen/battle_total_text_size"/>
+
+        <TextView
+            android:background="@drawable/vs_circle"
+            android:id="@+id/vs_text"
+            android:layout_gravity="center"
+            android:gravity="center"
+            android:textSize="@dimen/vs_text_size"
+            android:text="@string/vs_string"
+            android:textColor="@color/white"
+            android:layout_width="@dimen/vs_circle_size"
+            android:layout_height="@dimen/vs_circle_size" />
+
+        <TextView
+            style="@style/non_button_text"
+            android:layout_width="match_parent"
+            android:layout_weight="1"
+            android:text="1"
+            android:textSize="@dimen/battle_total_text_size"
+            android:id="@+id/textTotalLvl"/>
+
+    </LinearLayout>
+
+    <LinearLayout style="@style/battle_screen_half_wrapper"
+        android:background="@drawable/white_background">
+
+        <LinearLayout style="@style/up_down_horizontal_layout">
+
+        <LinearLayout style="@style/up_down_vertical_layout">
+
+            <TextView
+                style="@style/small_h2_text"
+                android:text="@string/level_string"
+                android:id="@+id/textMonsterLevel" />
+
+            <Button
+                style="@style/up_button"
+                android:id="@+id/imageBtnUpMonsterLevel"/>
+
+            <TextView
+                style="@style/number"
+                android:id="@+id/textMonsterLvl"/>
+
+            <Button
+                style="@style/down_button"
+                android:id="@+id/imageBtnDownMonsterLevel" />
+
+
+
+        </LinearLayout>
+
+        <LinearLayout style="@style/up_down_vertical_layout">
+
+            <TextView
+                style="@style/small_h2_text"
+                android:text="@string/modifier_string"
+                android:id="@+id/textMonsterMod" />
+
+            <Button
+                style="@style/up_button"
+                android:id="@+id/imageBtnUpMonsterMod"/>
+
+            <TextView
+                style="@style/number"
+                android:id="@+id/textMonsterModLvl"/>
+
+            <Button
+                style="@style/down_button"
+                android:id="@+id/imageBtnDownMonsterMod" />
+
+
+        </LinearLayout>
+
+        </LinearLayout>
+    <TextView
+        style="@style/non_button_text"
+        android:text="@string/monster_string"
+        android:id="@+id/textMonster" />
+
+
+    <LinearLayout style="@style/small_button_layout"
+        android:layout_marginTop="6dp">
+
+        <Button
+            style="@style/small_button"
+            android:text="@string/fight_string"
+            android:id="@+id/btnFight" />
+
+        <Button
+            style="@style/small_button"
+            android:text="@string/run_away_string"
+            android:id="@+id/btnRunAway"/>
+
+    </LinearLayout>
+
+
+    <com.google.android.gms.ads.AdView
+        style="@style/ad_bar"
+        android:id="@+id/adView"
+        ads:adSize="SMART_BANNER"
+        ads:adUnitId="ca-app-pub-1053526407243665/2104562837"/>
+
+</LinearLayout>
+</LinearLayout>

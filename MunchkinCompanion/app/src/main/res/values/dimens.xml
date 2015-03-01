@@ -1,0 +1,20 @@
+<resources>
+    <!-- Default screen margins, per the Android Design guidelines. -->
+    <dimen name="activity_horizontal_margin">16dp</dimen>
+    <dimen name="activity_vertical_margin">16dp</dimen>
+    <dimen name="button_textsize">20dp</dimen>
+    <dimen name="h2_text_size">30dp</dimen>
+    <dimen name="number_text_size">45dp</dimen>
+    <dimen name="up_down_button_width">60dp</dimen>
+    <dimen name="up_down_button_height">30dp</dimen>
+    <dimen name="large_strength_text_size">120sp</dimen>
+    <dimen name="fragment_player_strength_text_size">35dp</dimen>
+    <dimen name="fragment_player_strength_margin_top">15dp</dimen>
+    <dimen name="small_up_down_button_width">30dp</dimen>
+    <dimen name="small_up_down_button_height">15dp</dimen>
+    <dimen name="small_h2_text_size">20dp</dimen>
+    <dimen name="battle_total_text_size">50dp</dimen>
+    <dimen name="vs_text_size">28dp</dimen>
+    <dimen name="vs_circle_size">68sp</dimen>
+    <dimen name="vs_circle_stroke_size">2dp</dimen>
+</resources>

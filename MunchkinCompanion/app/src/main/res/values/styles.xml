@@ -1,0 +1,186 @@
+<resources xmlns:android="http://schemas.android.com/apk/res/android"
+           xmlns:ads="http://schemas.android.com/apk/res-auto">
+
+    <!-- Base application theme. -->
+    <style name="AppTheme" parent="Theme.AppCompat.Light.DarkActionBar">
+        <!-- Customize your theme here. -->
+    </style>
+
+    <style name="up_down_button">
+        <item name="android:layout_width">@dimen/up_down_button_width</item>
+        <item name="android:layout_height">@dimen/up_down_button_height</item>
+    </style>
+
+    <style name="up_button" parent="up_down_button">
+        <item name="android:background">@drawable/up_button</item>
+    </style>
+    
+    <style name="small_up_button" parent="up_button">
+        <item name="android:layout_width">@dimen/small_up_down_button_width</item>
+        <item name="android:layout_height">@dimen/small_up_down_button_height</item>
+    </style>
+    <style name="small_down_button" parent="down_button">
+        <item name="android:layout_width">@dimen/small_up_down_button_width</item>
+        <item name="android:layout_height">@dimen/small_up_down_button_height</item>
+    </style>
+
+    <style name="down_button" parent="up_down_button">
+        <item name="android:background">@drawable/down_button</item>
+    </style>
+
+    <style name="peach_background_style">
+        <item name="android:layout_height">match_parent</item>
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:background">@color/munchkin_peach</item>
+    </style>
+
+    <style name="up_down_vertical_layout">
+        <item name="android:layout_height">fill_parent</item>
+        <item name="android:layout_width">0dp</item>
+        <item name="android:layout_weight">1</item>
+        <item name="android:orientation">vertical</item>
+        <item name="android:gravity">center</item>
+        <item name="android:layout_gravity">center_horizontal</item>
+    </style>
+
+    <style name="up_down_horizontal_layout">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">0dp</item>
+        <item name="android:orientation">horizontal</item>
+        <item name="android:layout_weight">1</item>
+    </style>
+
+    <style name="non_button_text">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:textAppearance">?android:attr/textAppearanceLarge</item>
+        <item name="android:textColor">@color/munchkin_brown</item>
+        <item name="android:gravity">center</item>
+        <item name="android:layout_gravity">center_horizontal</item>
+    </style>
+
+    <style name="h2_text" parent="non_button_text">
+        <item name="android:textSize">@dimen/h2_text_size</item>
+    </style>
+
+    <style name="small_h2_text" parent="non_button_text">
+        <item name="android:textSize">@dimen/small_h2_text_size</item>
+    </style>
+
+    <style name="battle_screen_half_wrapper">
+        <item name="android:orientation">vertical</item>
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">0dp</item>
+        <item name="android:layout_weight">1</item>
+    </style>
+
+    <style name="player_fragment_strength" parent="non_button_text">
+        <item name="android:textSize">@dimen/fragment_player_strength_text_size</item>
+        <item name="android:layout_marginTop">@dimen/fragment_player_strength_margin_top</item>
+    </style>
+
+    <style name="large_strength_number" parent="non_button_text">
+        <item name="android:layout_gravity">center_horizontal</item>
+        <item name="android:textSize">@dimen/large_strength_text_size</item>
+        <item name="android:text">1</item>
+        <!-- No idea wtf this stuff does
+            android:numeric="integer"
+            android:inputType="number"-->
+    </style>
+
+    <style name="number" parent="non_button_text">
+        <item name="android:text">0</item>
+        <item name="android:numeric">integer</item>
+        <item name="android:textSize">@dimen/number_text_size</item>
+    </style>
+
+    <style name="small_header">
+        <item name="android:textColor">@string/munchkin_brown</item>
+    </style>
+
+    <style name ="square_button">
+        <item name="android:layout_gravity">center_horizontal</item>
+        <item name="android:textColor">@color/white</item>
+        <item name="android:background">@drawable/munchkin_button</item>
+        <item name="android:enabled">true</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:layout_centerInParent">true</item>
+    </style>
+
+    <style name="big_button" parent="square_button">
+        <item name="android:layout_width">125dp</item>
+        <item name="android:layout_height">63dp</item>
+        <item name="android:textSize">25sp</item>
+    </style>
+
+    <style name="title_menu_sword">
+        <item name="android:layout_centerInParent">true</item>
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">match_parent</item>
+        <item name="android:src">@drawable/sword_big</item>
+    </style>
+
+    <style name="small_button_layout">
+        <item name="android:layout_width">fill_parent</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:orientation">horizontal</item>
+        <item name="android:layout_marginTop">20dp</item>
+        <item name="android:layout_marginBottom">10dp</item>
+    </style>
+
+    <style name="small_button" parent="square_button">
+        <item name="android:textSize">20sp</item>
+        <item name="android:layout_width">0dp</item>
+        <item name="android:layout_weight">1</item>
+        <item name="android:layout_marginRight">@dimen/activity_horizontal_margin</item>
+        <item name="android:layout_marginLeft">@dimen/activity_horizontal_margin</item>
+        <item name="android:layout_height">wrap_content</item>
+    </style>
+
+    <style name="main_menu_small_button" parent="small_button">
+        <item name="android:textColor">@drawable/text_button_color</item>
+        <item name="android:enabled">false</item>
+    </style>
+
+    <style name="about_menu_back_button" parent="square_button">
+        <item name="android:textSize">@dimen/button_textsize</item>
+        <item name="android:layout_width">100dp</item>
+        <item name="android:layout_height">0dp</item>
+        <item name="android:layout_weight">10</item>
+        <item name="android:layout_gravity">left</item>
+        <item name="android:layout_centerInParent">false</item>
+        <item name="android:layout_marginLeft">@dimen/activity_horizontal_margin</item>
+    </style>
+
+    <style name="logo_layout">
+        <item name="android:layout_weight">30</item>
+        <item name="android:weightSum">2</item>
+        <item name="android:orientation">horizontal</item>
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">0dp</item>
+        <item name="android:paddingTop">@dimen/activity_vertical_margin</item>
+        <item name="android:paddingBottom">@dimen/activity_vertical_margin</item>
+        <item name="android:paddingLeft">@dimen/activity_horizontal_margin</item>
+        <item name="android:paddingRight">@dimen/activity_horizontal_margin</item>
+    </style>
+
+    <style name="logo">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">fill_parent</item>
+        <item name="android:layout_weight">1</item>
+    </style>
+
+    <style name="jordan_logo" parent="logo">
+        <item name="android:src">@drawable/kamina</item>
+    </style>
+
+    <style name="corey_logo" parent="logo">
+        <item name="android:src">@drawable/corey_logo</item>
+    </style>
+
+    <style name="ad_bar">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">wrap_content</item>
+    </style>
+
+</resources>

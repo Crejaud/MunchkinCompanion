@@ -1,0 +1,145 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    xmlns:ads="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    tools:context=".MainMenu"
+    android:background="@color/munchkin_peach">
+
+
+    <TabHost
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:id="@+id/tabHost"
+        android:layout_alignParentBottom="true"
+        android:layout_toLeftOf="@+id/btnStart">
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:orientation="vertical">
+
+            <TabWidget
+                android:id="@android:id/tabs"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:clickable="false"></TabWidget>
+
+            <FrameLayout
+                android:id="@android:id/tabcontent"
+                android:layout_width="fill_parent"
+                android:layout_height="fill_parent">
+
+                <LinearLayout
+                    android:id="@+id/tabCreator"
+                    android:layout_width="fill_parent"
+                    android:layout_height="fill_parent"
+                    android:orientation="vertical"
+                    android:clickable="false">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Player Creation"
+                        android:id="@+id/textCreation"
+                        android:layout_alignParentTop="true"
+                        android:layout_centerHorizontal="true"
+                        android:layout_alignParentEnd="false"
+                        android:password="false"
+                        android:nestedScrollingEnabled="false"
+                        android:layout_gravity="center_horizontal"
+                        android:layout_marginTop="20dp"
+                        android:textAppearance="?android:attr/textAppearanceLarge"
+                        android:textColor="@color/munchkin_brown" />
+
+                    <EditText
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:inputType="textPersonName"
+                        android:ems="10"
+                        android:id="@+id/textPlayer"
+                        android:layout_below="@+id/textCreation"
+                        android:layout_centerHorizontal="true"
+                        android:layout_marginTop="20dp"
+                        android:hint="Player Name"
+                        android:clickable="false"
+                        android:editable="false" />
+
+                    <Button
+                        android:layout_width="200dp"
+                        android:layout_height="wrap_content"
+                        android:text="@string/add_player_string"
+                        android:id="@+id/btnAdd"
+                        android:layout_below="@+id/textPlayer"
+                        android:layout_centerHorizontal="true"
+                        android:layout_marginTop="20dp"
+                        android:enabled="false"
+                        android:layout_gravity="center_horizontal"
+                        android:textColor="@drawable/text_button_color"
+                        android:background="@drawable/munchkin_button" />
+
+                    <Button
+                        android:layout_width="200dp"
+                        android:layout_height="wrap_content"
+                        android:text="START"
+                        android:id="@+id/btnStart"
+                        android:layout_centerVertical="true"
+                        android:layout_centerHorizontal="true"
+                        android:layout_marginTop="40dp"
+                        android:enabled="false"
+                        android:textColor="@drawable/text_button_color"
+                        android:background="@drawable/munchkin_button"
+                        android:layout_gravity="center_horizontal" />
+
+                    <com.google.android.gms.ads.AdView
+                        android:id="@+id/adView1"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentBottom="true"
+                        ads:adSize="BANNER"
+                        ads:adUnitId="ca-app-pub-1053526407243665/2104562837" />
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:id="@+id/tabPlayerList"
+                    android:layout_width="fill_parent"
+                    android:layout_height="fill_parent"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Player List"
+                        android:id="@+id/listTitle"
+                        android:layout_gravity="center_horizontal"
+                        android:layout_marginTop="20dp"
+                        android:textAppearance="?android:attr/textAppearanceLarge"
+                        android:textColor="@color/munchkin_brown" />
+
+                    <ListView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:id="@+id/listView"
+                        android:layout_gravity="center_horizontal" />
+
+                    <com.google.android.gms.ads.AdView
+                        android:id="@+id/adView2"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentBottom="true"
+                        ads:adSize="BANNER"
+                        ads:adUnitId="ca-app-pub-1053526407243665/2104562837" />
+                </LinearLayout>
+
+            </FrameLayout>
+
+        </LinearLayout>
+    </TabHost>
+
+</LinearLayout>

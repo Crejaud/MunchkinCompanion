@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:ads="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:id="@+id/title_menu"
+    android:background="@color/munchkin_peach"
+    android:clickable="false"
+    >
+
+
+    <TextView
+        android:textColor="@color/munchkin_brown"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/app_name"
+        android:id="@+id/textTitle"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:layout_marginTop="15dp"
+        android:paddingLeft="20dp"
+        android:paddingRight="20dp"
+        android:textSize="40dp"
+        android:lineSpacingMultiplier="1.2"
+        android:gravity="center" />
+
+    <RelativeLayout
+        android:layout_weight="1"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:paddingTop="15dp"
+        android:paddingBottom="15dp">
+
+        <ImageView
+            style="@style/title_menu_sword"
+            android:rotation="45"/>
+
+        <ImageView
+            style="@style/title_menu_sword"
+            android:rotation="-45"/>
+
+    </RelativeLayout>
+
+
+    <Button
+        style="@style/big_button"
+        android:text="@string/title_new_game_string"
+        android:id="@+id/btnStart" />
+
+        <LinearLayout
+            style="@style/small_button_layout">
+
+        <Button
+            android:text="@string/title_about_string"
+            android:id="@+id/btnAbout"
+            style="@style/small_button"/>
+
+        <Button
+            android:text="@string/title_buy_string"
+            android:id="@+id/btnBuy"
+            style="@style/small_button"/>
+
+    </LinearLayout>
+
+    <com.google.android.gms.ads.AdView
+        ads:adSize="SMART_BANNER"
+        ads:adUnitId="ca-app-pub-1053526407243665/2104562837"
+        android:id="@+id/adView"
+        style="@style/ad_bar"/>
+
+
+</LinearLayout>

@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="munchkin_brown">#4A1812</color>
+    <color name="white">#ffffff</color>
+    <color name="red">#96272F</color>
+    <color name="munchkin_peach">#FCCE97</color>
+    <color name="munchkin_eggwhite">#FEF0E3</color>
+    <color name="corey_logo_color">#2B6D19</color>
+    <color name="jordan_logo_color">#1D4999</color>
+</resources>

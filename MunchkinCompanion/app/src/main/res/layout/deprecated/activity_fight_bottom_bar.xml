@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/peach_background"
+    android:paddingLeft="55dp"
+    android:paddingRight="55dp"
+    android:paddingTop="20dp">
+
+
+    <Button
+        android:background="@string/munchkin_brown"
+        android:textColor="@android:color/white"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/run_away_string"
+        android:id="@+id/run_away_button"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentRight="true"
+    />
+
+    <Button
+        android:background="@string/munchkin_brown"
+        android:textColor="@android:color/white"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/fight_string"
+        android:id="@+id/fight_button"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentLeft="true"
+        />
+
+</RelativeLayout>

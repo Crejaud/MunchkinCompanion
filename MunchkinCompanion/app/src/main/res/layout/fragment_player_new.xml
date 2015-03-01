@@ -1,0 +1,88 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:ads="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/fragment_player"
+    style="@style/peach_background_style"
+    android:orientation="vertical">
+
+    <TextView
+        style="@style/player_fragment_strength"
+        android:text="@string/strength_string"
+        android:id="@+id/textStrength"/>
+
+    <TextView
+        style="@style/large_strength_number"
+        android:id="@+id/textTotalLvl"/>
+
+    <LinearLayout style="@style/up_down_horizontal_layout">
+
+        <LinearLayout style="@style/up_down_vertical_layout">
+
+            <TextView
+                style="@style/h2_text"
+                android:text="@string/level_string"
+                android:id="@+id/textLevel" />
+
+            <Button
+                style="@style/up_button"
+                android:id="@+id/imageBtnUp1"/>
+
+            <TextView
+                style="@style/number"
+                android:id="@+id/textBaseLvl"/>
+
+            <Button
+                style="@style/down_button"
+                android:id="@+id/imageBtnDown1" />
+
+        </LinearLayout>
+
+        <LinearLayout style="@style/up_down_vertical_layout">
+
+            <TextView
+                style="@style/h2_text"
+                android:text="@string/gear_string"
+                android:id="@+id/textGear" />
+
+            <Button
+                style="@style/up_button"
+                android:id="@+id/imageBtnUp2"/>
+
+            <TextView
+                style="@style/number"
+                android:id="@+id/textBonusLvl"/>
+
+            <Button
+                style="@style/down_button"
+                android:id="@+id/imageBtnDown2" />
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+    <LinearLayout
+        style="@style/small_button_layout">
+
+        <Button
+            style="@style/small_button"
+            android:text="@string/combat_string"
+            android:id="@+id/btnFight" />
+
+        <Button
+            style="@style/small_button"
+            android:text="@string/dice_roll_string"
+            android:id="@+id/btnDice" />
+
+    </LinearLayout>
+
+
+    <com.google.android.gms.ads.AdView
+        style="@style/ad_bar"
+        android:id="@+id/adView"
+        ads:adSize="SMART_BANNER"
+        ads:adUnitId="ca-app-pub-1053526407243665/2104562837" />
+
+
+</LinearLayout>

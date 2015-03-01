@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/winner_dialog_shape">
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:text=" has Won! Congratz!"
+        android:textColor="@color/munchkin_brown"
+        android:id="@+id/textWin"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_marginLeft="16dp"
+        android:layout_marginTop="16dp"
+        android:layout_marginRight="16dp"
+        android:layout_marginBottom="8dp" />
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Cancel"
+        android:id="@+id/btnCancel"
+        android:textColor="@color/white"
+        android:background="@drawable/munchkin_button"
+        android:enabled="true"
+        android:layout_alignLeft="@+id/textWin"
+        android:layout_alignStart="@+id/textWin"
+        android:layout_marginTop="8dp"
+        android:layout_below="@+id/textWin" />
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Restart"
+        android:id="@+id/btnRestart"
+        android:layout_below="@+id/textWin"
+        android:layout_alignRight="@+id/textWin"
+        android:textColor="@color/white"
+        android:background="@drawable/munchkin_button"
+        android:enabled="true"
+        android:layout_marginTop="8dp" />
+
+    <Space
+        android:layout_width="wrap_content"
+        android:layout_height="16dp"
+        android:layout_below="@+id/btnCancel"
+        android:layout_alignLeft="@+id/btnCancel"
+        android:layout_alignStart="@+id/btnCancel"
+        android:layout_alignRight="@+id/btnRestart"
+        android:id="@+id/space" />
+
+    <Space
+        android:layout_width="16dp"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/space"
+        android:layout_toRightOf="@+id/btnRestart"
+        android:layout_toEndOf="@+id/btnRestart"
+        android:layout_alignTop="@+id/textWin" />
+
+</RelativeLayout>

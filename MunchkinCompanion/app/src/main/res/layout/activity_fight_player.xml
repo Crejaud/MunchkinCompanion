@@ -1,0 +1,321 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:ads="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:baselineAligned="false"
+    android:background="@drawable/battlebackground">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:text="@string/level_string"
+        android:id="@+id/textLevel"
+        android:textColor="@color/munchkin_brown"
+        android:layout_marginLeft="35dp"
+        android:layout_marginTop="35dp"
+        android:layout_alignParentStart="true" />
+
+    <TextView
+        android:layout_width="60dp"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:text="1"
+        android:id="@+id/textBaseLvl"
+        android:numeric="integer"
+        android:textSize="40dip"
+        android:textColor="@color/munchkin_brown"
+        android:gravity="center"
+        android:layout_below="@+id/imageBtnUpLevel"
+        android:layout_marginLeft="35dp"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentTop="false" />
+
+    <Button
+        android:layout_width="60dp"
+        android:layout_height="30dp"
+        android:id="@+id/imageBtnUpLevel"
+        android:background="@drawable/up_button"
+        android:layout_below="@+id/textLevel"
+        android:layout_marginLeft="35dp" />
+
+    <Button
+        android:layout_width="60dp"
+        android:layout_height="30dp"
+        android:id="@+id/imageBtnDownLevel"
+        android:background="@drawable/down_button"
+        android:layout_below="@+id/textBaseLvl"
+        android:layout_marginLeft="35dp" />
+
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:text="@string/gear_string"
+        android:id="@+id/textGear"
+        android:textColor="@color/munchkin_brown"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="35dp" />
+
+
+
+
+    <Button
+        android:layout_width="60dp"
+        android:layout_height="30dp"
+        android:id="@+id/imageBtnUpGear"
+        android:background="@drawable/up_button"
+        android:layout_below="@+id/textGear"
+        android:layout_alignParentTop="false"
+        android:layout_centerHorizontal="true" />
+
+    <TextView
+        android:layout_width="60dp"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:text="0"
+        android:id="@+id/textBonusLvl"
+        android:inputType="number"
+        android:textSize="40dip"
+        android:numeric="integer"
+        android:textColor="@color/munchkin_brown"
+        android:gravity="center"
+        android:layout_centerHorizontal="true"
+        android:layout_below="@+id/imageBtnUpGear" />
+
+    <Button
+        android:layout_width="60dp"
+        android:layout_height="30dp"
+        android:id="@+id/imageBtnDownGear"
+        android:background="@drawable/down_button"
+        android:layout_centerHorizontal="true"
+        android:layout_below="@+id/textBonusLvl" />
+
+    <TextView
+        android:layout_width="80dp"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:text="1"
+        android:id="@+id/textTotalLvl"
+        android:numeric="integer"
+        android:inputType="number"
+        android:textSize="50dip"
+        android:textColor="@color/munchkin_brown"
+        android:gravity="center"
+        android:layout_below="@+id/imageBtnDownMod"
+        android:layout_alignParentRight="true"
+        android:layout_marginRight="35dp"
+        android:layout_marginTop="10dp" />
+
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:text="@string/modifier_string"
+        android:id="@+id/textModifier"
+        android:textColor="@color/munchkin_brown"
+        android:layout_marginTop="35dp"
+        android:layout_marginRight="35dp"
+        android:layout_alignParentEnd="true" />
+
+    <TextView
+        android:layout_width="60dp"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:text="0"
+        android:id="@+id/textOneShotLvl"
+        android:textColor="@color/munchkin_brown"
+        android:textSize="40dip"
+        android:layout_marginRight="35dp"
+        android:layout_alignParentRight="true"
+        android:gravity="center"
+        android:layout_below="@+id/imageBtnUpMod" />
+
+    <Button
+        android:layout_width="60dp"
+        android:layout_height="30dp"
+        android:id="@+id/imageBtnUpMod"
+        android:background="@drawable/up_button"
+        android:layout_alignParentRight="true"
+        android:layout_marginRight="35dp"
+        android:layout_below="@+id/textModifier" />
+
+    <Button
+        android:layout_width="60dp"
+        android:layout_height="30dp"
+        android:id="@+id/imageBtnDownMod"
+        android:background="@drawable/down_button"
+        android:layout_marginRight="35dp"
+        android:layout_alignParentRight="true"
+        android:layout_below="@+id/textOneShotLvl" />
+
+
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:text="player name"
+        android:id="@+id/textPlayerName"
+        android:textColor="@color/munchkin_brown"
+        android:layout_alignParentBottom="false"
+        android:layout_alignParentLeft="false"
+        android:layout_alignParentStart="false"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="5dp" />
+
+    <TextView
+        android:layout_width="80dp"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:text="1"
+        android:id="@+id/textMonsterTotalLvl"
+        android:layout_alignParentLeft="true"
+        android:layout_alignTop="@+id/textTotalLvl"
+        android:textColor="@color/munchkin_brown"
+        android:textSize="50dip"
+        android:layout_marginLeft="35dp"
+        android:gravity="center" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:text="@string/level_string"
+        android:id="@+id/textMonsterLevel"
+        android:textColor="@color/munchkin_brown"
+        android:layout_toRightOf="@+id/imageBtnDownLevel"
+        android:layout_below="@+id/textMonsterTotalLvl"/>
+
+    <Button
+        android:layout_width="60dp"
+        android:layout_height="30dp"
+        android:id="@+id/imageBtnUpMonsterLevel"
+        android:background="@drawable/up_button"
+        android:layout_toRightOf="@+id/imageBtnDownLevel"
+        android:layout_below="@+id/textMonsterLevel"
+        android:layout_alignParentRight="false" />
+
+    <TextView
+        android:layout_width="60dp"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:text="1"
+        android:id="@+id/textMonsterLvl"
+        android:numeric="integer"
+        android:textSize="40dip"
+        android:textColor="@color/munchkin_brown"
+        android:gravity="center"
+        android:layout_below="@+id/imageBtnUpMonsterLevel"
+        android:layout_alignLeft="@+id/imageBtnUpMonsterLevel" />
+
+    <Button
+        android:layout_width="60dp"
+        android:layout_height="30dp"
+        android:id="@+id/imageBtnDownMonsterLevel"
+        android:background="@drawable/down_button"
+        android:layout_below="@+id/textMonsterLvl"
+        android:layout_alignLeft="@+id/textMonsterLvl" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:text="@string/modifier_string"
+        android:id="@+id/textMonsterMod"
+        android:textColor="@color/munchkin_brown"
+        android:layout_toLeftOf="@+id/imageBtnDownMod"
+        android:layout_below="@+id/textTotalLvl" />
+
+    <Button
+        android:layout_width="60dp"
+        android:layout_height="30dp"
+        android:id="@+id/imageBtnUpMonsterMod"
+        android:background="@drawable/up_button"
+        android:layout_toLeftOf="@+id/imageBtnDownMod"
+        android:layout_below="@+id/textMonsterMod" />
+
+    <TextView
+        android:layout_width="60dp"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:text="0"
+        android:id="@+id/textMonsterModLvl"
+        android:numeric="integer"
+        android:textSize="40dip"
+        android:textColor="@color/munchkin_brown"
+        android:gravity="center"
+        android:layout_below="@+id/imageBtnUpMonsterMod"
+        android:layout_alignRight="@+id/imageBtnUpMonsterMod" />
+
+    <Button
+        android:layout_width="60dp"
+        android:layout_height="30dp"
+        android:id="@+id/imageBtnDownMonsterMod"
+        android:background="@drawable/down_button"
+        android:layout_below="@+id/textMonsterModLvl"
+        android:layout_alignRight="@+id/textMonsterModLvl" />
+
+
+
+    <Button
+        android:layout_width="140dp"
+        android:layout_height="60dp"
+        android:text="Fight"
+        android:id="@+id/btnFight"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="false"
+        android:layout_alignParentBottom="true"
+        android:layout_marginBottom="50dp"
+        android:layout_marginLeft="35dp"
+        android:textSize="20dip"
+        android:textColor="@drawable/text_button_color"
+        android:background="@drawable/munchkin_button"
+        android:layout_above="@+id/adView5" />
+
+    <Button
+        android:layout_width="140dp"
+        android:layout_height="60dp"
+        android:text="Run Away"
+        android:id="@+id/btnRunAway"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentBottom="true"
+        android:layout_marginRight="35dp"
+        android:layout_marginBottom="50dp"
+        android:textColor="@drawable/text_button_color"
+        android:background="@drawable/munchkin_button"
+        android:textSize="20dip"
+        android:layout_above="@+id/adView5" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:text="Monster"
+        android:id="@+id/textMonster"
+        android:layout_alignParentBottom="false"
+        android:layout_alignParentRight="false"
+        android:layout_alignParentEnd="false"
+        android:layout_centerHorizontal="true"
+        android:gravity="center"
+        android:textColor="@color/munchkin_brown"
+        android:layout_marginTop="10dp"
+        android:layout_below="@+id/imageBtnDownMonsterLevel" />
+
+    <com.google.android.gms.ads.AdView
+        android:id="@+id/adView5"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        ads:adSize="SMART_BANNER"
+        android:gravity="center"
+        android:layout_alignParentBottom="true"
+        ads:adUnitId="ca-app-pub-1053526407243665/2104562837"
+        android:layout_alignParentLeft="false" />
+</RelativeLayout>

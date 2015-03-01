@@ -1,0 +1,150 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:ads="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent" android:layout_height="match_parent"
+    android:focusable="true"
+    android:id="@+id/fragment_player"
+    android:background="@color/munchkin_peach">
+
+
+    <TextView
+        android:layout_width="60dp"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:text="1"
+        android:id="@+id/textBaseLvl"
+        android:numeric="integer"
+        android:textSize="40dip"
+        android:textColor="@color/munchkin_brown"
+        android:gravity="center"
+        android:layout_below="@+id/imageBtnUp1"
+        android:layout_alignLeft="@+id/imageBtnUp1"
+        android:layout_alignStart="@+id/imageBtnUp1" />
+
+    <Button
+        android:layout_width="60dp"
+        android:layout_height="30dp"
+        android:id="@+id/imageBtnUp1"
+        android:background="@drawable/up_arrow"
+        android:layout_marginTop="10dp"
+        android:layout_alignLeft="@+id/textLevel"
+        android:layout_below="@+id/textLevel" />
+
+    <Button
+        android:layout_width="60dp"
+        android:layout_height="30dp"
+        android:id="@+id/imageBtnDown1"
+        android:background="@drawable/down_arrow"
+        android:layout_below="@+id/textBaseLvl"
+        android:layout_alignLeft="@+id/textBaseLvl"
+        android:layout_alignStart="@+id/textBaseLvl" />
+
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:text="@string/gear_string"
+        android:id="@+id/textGear"
+        android:textColor="@color/munchkin_brown"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="15dp" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:text="@string/level_string"
+        android:id="@+id/textLevel"
+        android:textColor="@color/munchkin_brown"
+        android:layout_alignParentTop="true"
+        android:layout_marginTop="15dp"
+        android:layout_marginLeft="35dp"
+        android:layout_alignParentStart="true" />
+
+    <Button
+        android:layout_width="60dp"
+        android:layout_height="30dp"
+        android:id="@+id/imageBtnUp2"
+        android:background="@drawable/up_arrow"
+        android:layout_centerHorizontal="true"
+        android:layout_below="@+id/textGear"
+        android:layout_marginTop="10dp" />
+
+    <TextView
+        android:layout_width="60dp"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:text="0"
+        android:id="@+id/textBonusLvl"
+        android:inputType="number"
+        android:textSize="40dip"
+        android:numeric="integer"
+        android:textColor="@color/munchkin_brown"
+        android:gravity="center"
+        android:layout_below="@+id/imageBtnUp2"
+        android:layout_alignLeft="@+id/imageBtnUp2"
+        android:layout_alignStart="@+id/imageBtnUp2" />
+
+    <Button
+        android:layout_width="60dp"
+        android:layout_height="30dp"
+        android:id="@+id/imageBtnDown2"
+        android:background="@drawable/down_arrow"
+        android:layout_marginTop="50dp"
+        android:layout_below="@+id/imageBtnUp2"
+        android:layout_centerHorizontal="true" />
+
+
+    <TextView
+        android:layout_width="120dp"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:text="1"
+        android:id="@+id/textTotalLvl"
+        android:numeric="integer"
+        android:inputType="number"
+        android:textSize="100dip"
+        android:textColor="@color/munchkin_brown"
+        android:gravity="center"
+        android:layout_below="@+id/textStrength"
+        android:layout_alignParentRight="true"
+        android:layout_marginRight="15dp" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:text="@string/strength_string"
+        android:id="@+id/textStrength"
+        android:layout_marginRight="35dp"
+        android:layout_alignParentEnd="true"
+        android:layout_marginTop="15dp"
+        android:layout_alignParentTop="true"
+        android:textColor="@color/munchkin_brown" />
+
+    <Button
+        android:layout_width="250dp"
+        android:layout_height="100dp"
+        android:text="@string/combat_string"
+        android:textSize="35dp"
+        android:textColor="@drawable/text_button_color"
+        android:background="@drawable/munchkin_button"
+        android:id="@+id/btnFight"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="42dp"
+        android:layout_alignParentBottom="true" />
+
+
+    <com.google.android.gms.ads.AdView
+        android:id="@+id/adView3"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        ads:adSize="SMART_BANNER"
+        ads:adUnitId="ca-app-pub-1053526407243665/2104562837" />
+
+
+</RelativeLayout>

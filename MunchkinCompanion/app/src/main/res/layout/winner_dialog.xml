@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/winner_dialog_shape"
+    android:paddingBottom="16dp"
+    android:paddingRight="16dp">
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:text=" has Won! Congratz!"
+        android:textColor="@color/munchkin_brown"
+        android:id="@+id/textWin"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_marginLeft="16dp"
+        android:layout_marginTop="16dp"
+        android:layout_marginRight="16dp"
+        android:layout_marginBottom="8dp"
+        android:gravity="center_horizontal" />
+    <Button
+        style="@style/square_button"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/cancel_string"
+        android:id="@+id/btnCancel"
+        android:layout_alignLeft="@+id/textWin"
+        android:layout_alignStart="@+id/textWin"
+        android:layout_marginTop="8dp"
+        android:layout_below="@+id/textWin" />
+    <Button
+        style="@style/square_button"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/restart_string"
+        android:id="@+id/btnRestart"
+        android:layout_below="@+id/textWin"
+        android:layout_alignRight="@+id/textWin"
+        android:layout_marginTop="8dp" />
+
+</RelativeLayout>

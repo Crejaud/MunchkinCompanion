@@ -1,0 +1,84 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:ads="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/munchkin_peach">
+
+    <Button
+        style="@style/about_menu_back_button"
+        android:layout_marginTop="@dimen/activity_vertical_margin"
+        android:layout_marginBottom="@dimen/activity_vertical_margin"
+        android:text="@string/about_back_string"
+        android:id="@+id/btnBack"/>
+
+    <LinearLayout
+        style="@style/logo_layout">
+
+        <ImageView
+            style="@style/corey_logo"
+            android:id="@+id/imageCorey" />
+
+        <ImageView
+            style="@style/jordan_logo"
+            android:id="@+id/imageJordan"/>
+
+    </LinearLayout>
+
+    <RelativeLayout
+        android:layout_weight="40"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:paddingTop="15dp"
+        android:paddingBottom="15dp"
+        android:layout_marginLeft="@dimen/activity_horizontal_margin"
+        android:layout_marginRight="@dimen/activity_horizontal_margin">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textAppearance="?android:attr/textAppearanceLarge"
+            android:text="@string/about_string_1"
+            android:id="@+id/textAbout1"
+            android:gravity="center_horizontal"
+            android:layout_centerInParent="true"
+            android:layout_marginBottom="20dp" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textAppearance="?android:attr/textAppearanceLarge"
+            android:text="@string/about_string_2"
+            android:id="@+id/textAbout2"
+            android:layout_below="@+id/textAbout1"
+            android:gravity="fill_horizontal"
+            android:layout_centerInParent="true" />
+
+    </RelativeLayout>
+
+    <LinearLayout
+        style="@style/small_button_layout">
+
+        <Button
+            style="@style/small_button"
+            android:text="@string/twitter_string"
+            android:id="@+id/btnTwitter" />
+
+        <Button
+            style="@style/small_button"
+            android:text="@string/website_string"
+            android:id="@+id/btnWebsite"/>
+
+    </LinearLayout>
+
+    <com.google.android.gms.ads.AdView
+        android:id="@+id/adView"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        ads:adSize="SMART_BANNER"
+        ads:adUnitId="ca-app-pub-1053526407243665/2104562837" />
+
+</LinearLayout>
